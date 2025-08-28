@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalist</title>
+  </head>
+  <body>
+    <h1>Datalist</h1>
+
+    <form>
+      <label for="langauges"> Favourite Programming Languages </label>
+      <input
+        type="text"
+        name="langauges"
+        id="langauges"
+        list="favourite_language"
+      />
+      <datalist id="favourite_language">
+        <option value="12:00script">Javascript</option>
+        <option value="11:00">Python</option>
+        <option value="Java">Java</option>
+        <option value="GO">GO</option>
+      </datalist>
+    </form>
+
+    <form>
+      <label for="time">Time</label>
+      <input type="time" name="time" id="time" list="time_slot" />
+      <datalist id="time_slot">
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">01:00 PM</option>
+      </datalist>
+    </form>
+
+    <form>
+      <label for="color">Color</label>
+      <input type="color" name="color" id="color" list="color_options" />
+      <datalist id="color_options">
+        <option value="#800000"></option>
+        <option value="#8B0000"></option>
+        <option value="#A52A2A"></option>
+        <option value="#DC143C"></option>
+      </datalist>
+    </form>
+
+    <form>
+      <label for="amount">Tip Amount</label>
+      <input
+        type="range"
+        name="amount"
+        id="amount"
+        list="tip_amount"
+        min="10"
+        max="100"
+      />
+      <datalist id="tip_amount">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+        <option value="90">90</option>
+        <option value="100">100</option>
+      </datalist>
+    </form>
+  </body>
+</html>
