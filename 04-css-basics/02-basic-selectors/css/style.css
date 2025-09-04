@@ -1,0 +1,51 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+/* Element / Tag Selectors */
+
+h2 {
+  color: red;
+  font-size: 50px;
+}
+
+p {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Class Selectors */
+.sporty {
+  color: red;
+}
+
+.casual {
+  color: blue;
+}
+
+.formal {
+  color: brown;
+}
+
+/* ID Selectors */
+#container {
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+/* Descendant Selectors */
+#container p {
+  color: #ccc;
+}
+
+div p {
+  color: aquamarine;
+}
+
+/* Multiple Selectors */
+h2,
+a {
+  background-color: burlywood;
+}
