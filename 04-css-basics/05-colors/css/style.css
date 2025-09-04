@@ -1,0 +1,44 @@
+/* Hex */
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* background-color: #ffffff; */
+  background-color: #fff;
+}
+
+/* Regular Color Name */
+.sporty {
+  color: coral;
+}
+
+/* RGB | RGBA */
+.casual {
+  /* color: rgb(255, 0, 255); */
+  color: rgb(255, 0, 255, 0.6);
+}
+
+/*  HSL | HSLA */
+.formal {
+  color: hsl(150, 75%, 80%);
+  color: hsl(150, 75%, 80%, 0.7);
+}
+
+.card {
+  /* background: rgba(200, 185, 75, 0.7); */
+  background-color: #000;
+  color: #fff;
+  /* opacity */
+  opacity: 0.5;
+}
+
+/* 
+Colors:
+
+Color => text-color
+Background => background-color
+Border => border-color
+outline => outline-color
+box-shadow => Box Drop Shadows
+text-shadow => Text Drop Shadows
+fill (SVG)
+
+*/
