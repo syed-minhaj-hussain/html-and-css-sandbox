@@ -1,0 +1,16 @@
+#container h1 {
+  color: orange;
+}
+
+#heading {
+  color: blue;
+}
+
+.container h1 {
+  color: red;
+}
+
+h1 {
+  color: green !important;
+  /* Overrides all other styles */
+}
