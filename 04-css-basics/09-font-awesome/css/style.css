@@ -1,0 +1,11 @@
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.fa-clock {
+  color: darkgoldenrod;
+}
+
+.fa-house {
+  font-size: 30px;
+  color: rgb(0, 77, 80);
+}
