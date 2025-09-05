@@ -1,0 +1,41 @@
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  /* background-color */
+  /* background-color: aquamarine; */
+
+  /* background-image */
+  /* background-image: url("../texture.png"); */
+  background-image: url("../hero.jpg");
+  /* background-size: 200px; */
+  /* background-position: 200px 500px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* Linear Gradient */
+  background: linear-gradient(to left, red, green);
+  background: linear-gradient(to right, red, green);
+  background: linear-gradient(to bottom, red, green);
+  background: linear-gradient(to bottom left, lightblue, darkblue);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.8rem;
+}
