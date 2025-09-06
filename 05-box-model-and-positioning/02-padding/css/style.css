@@ -1,0 +1,25 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  background-color: darkblue;
+  color: #fff;
+  width: 300px;
+  /* Padding on all sides */
+  padding: 20px;
+
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+
+  /* Padding shorthand (TRBL) "CLOCKWISE" */
+  padding: 20px 30px 60px 40px;
+
+  /* TB-LR */
+  padding: 20px 40px;
+
+  /* T-LR-B */
+  padding: 20px 40px 60px;
+}
