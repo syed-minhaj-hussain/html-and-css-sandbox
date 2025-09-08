@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  position: static;
+  left: 200px; /* No Effect */
+}
+
+.box-2 {
+  position: relative;
+  left: 200px;
+  top: 30px;
+}
+
+.box-3 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* 
+ Fixed: Removed from normal document flow
+-> The element no longer affects the position of other elements.
+-> Other elements behave as if it’s not there.
+-> Positioned relative to the viewport, not its parent 
+---------
+In Short:
+---------
+"fixed" = always pinned to viewport.
+*/
+}
+
+.box-4 {
+  position: sticky;
+  top: 100px;
+  /* 
+  Behavior of position: sticky
+  ----------------------------
+1) Starts as relative
+    - A sticky element behaves like position: relative until you scroll to a certain threshold.
+    - It moves along with the document flow initially.
+
+2)Becomes fixed within its parent container
+    - Once the scroll reaches the offset (top, left, etc.) you set, the element “sticks” to that position.
+      Example:
+            .sticky-box {
+              position: sticky;
+              top: 0;
+            }
+    👉 This will make the element stick to the top of its container while scrolling.
+
+3) But only inside its parent’s boundaries
+    - Unlike fixed, it doesn’t stick forever to the viewport.
+    - Once the parent container scrolls out of view, the sticky element also goes away.
+---------
+In Short:
+---------
+"sticky" = relative + temporarily fixed inside its parent.
+  */
+}
+
+.box-5 {
+  width: 600px;
+  height: 600px;
+  background-color: coral;
+  position: relative;
+}
+
+.box-6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
