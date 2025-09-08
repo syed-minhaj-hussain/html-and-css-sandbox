@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #d9e2e8;
+}
+
+.flex-container {
+  background-color: lightblue;
+  display: flex;
+  /* Flex-Direction: Default => "row"
+      Available options = "row", "row-reverse", "column", "column-reverse"
+  */
+  flex-direction: row;
+  /* Flex-Wrap: Default => "no-wrap"
+      Available options = "no-wrap", "wrap", "wrap-reverse"
+  */
+  flex-wrap: wrap;
+  gap: 10px;
+  /* row-gap: 10px;
+  column-gap: 10px; */
+}
+
+.flex-item {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: 1px solid black;
+}
