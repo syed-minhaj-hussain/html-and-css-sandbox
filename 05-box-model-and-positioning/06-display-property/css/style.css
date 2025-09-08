@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.none-el {
+  display: none;
+}
+
+.hidden-el {
+  visibility: hidden;
+}
+
+p {
+  display: inline;
+}
+
+a {
+  border: 1px solid darkblue;
+  padding: 20px;
+  background-color: coral;
+  /* No Vertical Margin, width & height is being applied to "a" tag, because it is "inline" element */
+  margin: 20px 10px;
+  width: 200px;
+  height: 200px;
+  /* If we want to apply the above properties to any "inline" element, we've to make that "inline" element to "block" or "inline-block" */
+  display: inline-block;
+}
