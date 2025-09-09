@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+Flex-Direction: Row
+                    | Cross Start
+                    |
+                    | Cross Axis |
+                    |            V
+                    |
+-------------------------> Main End
+Main Axis ->        |
+Main Start          | Cross End
+                    V
+
+--------------------------------------
+
+Flex-Direction: Column
+                    | Main Start
+                    |
+                    | Main Axis |
+                    |           V
+                    |
+-------------------------> Cross End
+Cross Axis ->       |
+Cross Start         | Main End
+                    V
+*/
+
+.flex-container {
+  height: 800px;
+  background-color: lightblue;
+  display: flex;
+  /* 
+  ---------------
+  Justify-Content: center | flex-start | flex-end | space-around | space-evenly | space-between | start | end |
+  ---------------  left | right.
+  -----------
+  align-items: baseline | center | flex-start | flex-end | stretch.
+  -----------
+  */
+  justify-content: left;
+  align-items: baseline;
+}
+
+.flex-item {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: 1px solid black;
+}
+
+/* Example for "align-items: baseline;" */
+.item-4 {
+  font-size: 30px;
+}
+
+.item-1 {
+  align-self: flex-end;
+}
+
+.item-3 {
+  align-self: center;
+}
+
+.container-two {
+  display: flex; /* baseline alignment */
+  align-items: baseline;
+  border: 1px solid black;
+}
+.box {
+  margin: 5px;
+  background: #ccc;
+}
+/* Visualizing "flex-direction:column" */
+
+.flex-item {
+  height: 100px;
+}
+
+.flex-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
