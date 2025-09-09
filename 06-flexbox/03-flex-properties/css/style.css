@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  background-color: lightblue;
+  display: flex;
+}
+
+.flex-item {
+  /* Commented for visualising "flex-basis" property */
+  /* width: 200px; */
+  padding: 20px 15px;
+  border: 1px solid black;
+  background-color: coral;
+}
+
+/* 
+------------
+flex-shrink: 
+------------ 
+=> It specifies how much a flex item will shrink relative to the other items in the flex container.
+=> By default, all the "flex-items" have the same "flex-shrink" value (i.e "1").       
+=> which means they will shrink equally when the flex container is smaller than the total size of the items 
+*/
+/* 
+You'll see that the first item is not shrinking at all. The other items are shrinking because they have a "flex-shrink" value of "1".
+*/
+
+.item-1 {
+  /* flex-shrink: 0; */
+}
+
+/* 
+Now the "second item" is shrinking at twice the rate of the other items. The "first item" is not shrinking at all because it has a "flex-shrink" value of "0".
+*/
+
+.item-2 {
+  /* flex-shrink: 2; */
+}
+
+/* 
+----------
+flex-grow:
+----------
+=> It specifies how much a "flex item" will "grow" relative to the other items in the flex container. 
+=> By default, all "flex items" have a "flex-grow" value of "0".
+=> which means they will not grow. If you want a "flex item" to grow, you can set the "flex-grow" property to a "positive" value. 
+=> The higher the value, the more the item will grow relative to the other items.
+*/
+
+.item-3 {
+  flex-grow: 1;
+}
+
+.item-1,
+.item-2 {
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+/* 
+-----------
+flex-basis:
+-----------
+=> It specifies the initial size of a flex item before any available space is distributed. 
+=> It can be a "length" value, a "percentage" value, or "auto". 
+=> By default, the flex-basis property is set to "auto", which means the initial size of the item will be determined by its content.
+*/
+/* Now the second item will have an initial size of 150px. So the first one will not grow until the second one reaches 150px.
+*/
+.item-2 {
+  flex-basis: 150px;
+}
+
+/* 
+-----
+flex:
+-----
+=> The "flex" property is a shorthand for the "flex-grow", "flex-shrink", and "flex-basis".
+*/
+/* When we make the browser smaller, all the items will shrink equally, however, since we have a "flex-basis" of "200px", they will not shrink below that size. */
+.flex-item {
+  flex: 1 0 200px;
+}
+/* Now all of the items will shrink equally and take up the full width of the flex container. */
+.flex-item {
+  flex: 1 0 0;
+}
+/* We can take this a step further. Since the "flex-shrink" and "flex-basis" values are "0", we can actually just use the "flex-grow" value: */
+.flex-item {
+  flex: 1;
+}
