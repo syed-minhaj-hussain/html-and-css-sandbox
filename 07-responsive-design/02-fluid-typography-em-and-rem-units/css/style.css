@@ -1,0 +1,51 @@
+html {
+  font-size: 10px;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/*  --------------
+    Absolute Units: Pixels (px) | Centimeters (cm) | Millimeters (mm) | Inches {in) | Points (pt) | Picas (pc).
+    --------------
+    --------------
+    Relative Units: Percentages (%) | em & rm | Viewport Height / Width (vh / vw) | Viewport Max / Min (vmax / vmin).
+    --------------
+
+*/
+
+/*  ---
+    REM: It is the multiplier of the "font-size" of "ROOT / HTML" element.
+    ---
+    --
+    EM: It is the multiplier of it's immediate parent element.
+    --
+*/
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 1.6rem;
+}
+
+/* rem */
+.container h1 {
+  font-size: 3rem;
+}
+
+/* em */
+
+.ul {
+  font-size: 1.5em;
+  border-top: 1em solid black;
+}
