@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  /* If we set the "fixed-width", then the content will overflow if the "screen-size" is less than the given "width" */
+  width: 1100px;
+  /* If we set the "width" to a "fixed-percentage", it will take the "same width" for all the different "screen-sizes", we might have to "increase / decrease" the "width" wrt the "screen-size". */
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* If we set "max-width of 100%" to an image, it will "not exceed / overflow" from the "container / parent". */
+img {
+  max-width: 100%;
+}
+
+.container-two {
+  /* With the "max-width" property, the "container" will grow till "1100px". But, if the "container / screen" is "smaller" that "1100px". instead of "overflowing", it will "automatically adjust itself within the screen-size".  */
+  max-width: 1100px;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 20px;
+}
