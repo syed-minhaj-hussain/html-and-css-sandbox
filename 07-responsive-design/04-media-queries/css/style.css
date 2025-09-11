@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Widescreen */
+@media screen and (max-width: 1200px) {
+  .widescreen {
+    background-color: coral;
+  }
+}
+
+/* Normal / Desktop */
+@media (max-width: 992px) {
+  .normal {
+    background-color: lightblue;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+  .tablet {
+    background-color: lightgreen;
+  }
+}
+
+@media (max-width: 576px) {
+  .smartphone {
+    background-color: goldenrod;
+  }
+}
+
+/* Landscape */
+@media (orientation: landscape) {
+  .landscape {
+    background-color: mediumpurple;
+  }
+}
+
+/* Height */
+@media (max-height: 550px) {
+  .height {
+    background-color: mistyrose;
+  }
+}
+
+/* Min & Max width / Height */
+@media (min-width: 768px) and (max-width: 992px) {
+  .normal {
+    background-color: #333;
+  }
+}
