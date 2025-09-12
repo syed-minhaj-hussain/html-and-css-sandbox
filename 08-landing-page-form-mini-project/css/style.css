@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Wrapper */
+.wrapper {
+  background: linear-gradient(
+      to Bottom,
+      rgba(255, 64, 50, 0.8),
+      rgba(71, 17, 116, 0.9)
+    ),
+    url("../images/background.jpg") no-repeat center center;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.header .logo {
+  color: #fff;
+  width: 100px;
+}
+
+.header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header .header-right i {
+  margin-right: 5px;
+}
+
+.header .header-right a {
+  color: #fff;
+}
+
+.header .header-right a:hover {
+  color: purple;
+}
