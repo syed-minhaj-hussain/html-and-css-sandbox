@@ -18,8 +18,8 @@ body {
       rgba(255, 64, 50, 0.8),
       rgba(71, 17, 116, 0.9)
     ),
-    url("../images/background.jpg") no-repeat center center;
-  height: 100vh;
+    url("../images/background.jpg") no-repeat center/cover;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -51,4 +51,109 @@ body {
 
 .header .header-right a:hover {
   color: purple;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1100px;
+  display: flex;
+  align-items: flex-start;
+  margin: 200px auto;
+  padding: 0 40px;
+  gap: 50px;
+}
+
+.main-content form {
+  flex: 1;
+}
+
+.main-content .text-container {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #ff4032;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff5c4d;
+}
+
+/* Text Container */
+.text-container h1 {
+  margin: 50px 0 20px;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.text-container p {
+  font-size: 18px;
+}
+
+/* Adding Responsiveness */
+
+@media screen and (max-width: 768px) {
+  .header,
+  .header .header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+    justify-content: start;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  .main-content form,
+  .text-container {
+    width: 100%;
+  }
+
+  .text-container h1 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .text-container p {
+    display: none;
+  }
 }
