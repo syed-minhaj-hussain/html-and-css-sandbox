@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Wrapper */
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+      to Bottom,
+      rgba(255, 64, 50, 0.8),
+      rgba(71, 17, 116, 0.9)
+    ),
+    url("../images/background.jpg") no-repeat center/cover;
+}
+
+/* Header */
+.header {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 100px;
+}
+
+.header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-right i {
+  margin-right: 5px;
+}
+
+.header-right a {
+  color: white;
+}
+
+.header-right a:hover {
+  color: purple;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1100px;
+  margin: 200px auto;
+  display: flex;
+  gap: 50px;
+  padding: 0 40px;
+}
+
+.main-content form {
+  flex: 1;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #ff4032;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #ff5c4d;
+}
+
+/* Text Container */
+.text-container h1 {
+  font-size: 50px;
+  line-height: 1.4;
+  margin: 50px 0 20px;
+}
+
+.text-container p {
+  font-size: 18px;
+}
+
+/* Adding Responsiveness */
+@media screen and (max-width: 768px) {
+  .header,
+  .header .header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+    margin: auto;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .text-container h1 {
+    font-size: 40px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+
+  .text-container p {
+    display: none;
+  }
+}
