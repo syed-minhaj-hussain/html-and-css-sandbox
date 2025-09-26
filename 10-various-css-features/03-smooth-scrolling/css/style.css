@@ -39,6 +39,17 @@ p {
   background: linear-gradient(45deg, #f00, #00f);
   padding: 20px 0;
   margin-bottom: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header.transparent {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.9),
+    rgba(0, 0, 255, 0.9)
+  );
 }
 
 .header .menu ul {
