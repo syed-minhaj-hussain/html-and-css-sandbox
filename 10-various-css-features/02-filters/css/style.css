@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 70px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  /* Vender-Prefixes */
+  /* -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(50%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);  */
+
+  /* filter: blur(1px); */
+  /* filter: brightness(150%); */
+  /* filter: contrast(50%); */
+  /* filter: opacity(80%); */
+  /* filter: drop-shadow(5px 5px 5px red); */
+  /* filter: hue-rotate(-150deg); */
+  /* filter: invert(90%); */
+  /* filter: saturate(50%); */
+  /* filter: sepia(100%); */
+
+  /* Multiple Properties */
+  /* filter: grayscale(100%) blur(1px); */
+
+  /* Reset Filters */
+  /* filter: none; */
+}
