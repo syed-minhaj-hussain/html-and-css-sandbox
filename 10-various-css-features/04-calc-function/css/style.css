@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container-width: 1000px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: var(--container-width);
+  height: 200px;
+  background-color: #000;
+  display: flex;
+}
+
+.item {
+  background-color: coral;
+  /* width: calc(var(--container-width) / 2); */
+  /* border: 1px solid white; */
+  min-width: calc(calc(var(--container-width) / 5) - 20px);
+  height: calc(200px - 20px);
+  margin: 10px;
+}
